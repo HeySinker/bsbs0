@@ -19,60 +19,35 @@
             justify-content: space-between;
             align-items: center;
         }
-         .hh1 {  font-size: 72px;       font-weight: bold;
-         }
+        .hh1 {  
+            font-size: 72px;       
+            font-weight: bold;
+        }
+
         .download-btn {
             padding: 13px 53px;
             border-radius: 20px;
-            border: none;
+            border: 1px solid rgba(255,255,255,0.8); /* حدود بيضاء خفيفة */
+            background-color: rgba(0,0,0,0.5); /* أسود شفاف */
             cursor: pointer;
             text-decoration: none;
             font-size: 21px;
             font-weight: bold;
             color: white;
             box-shadow: 0px 3px 8px rgba(0,0,0,0.3);
-            transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, border-color 0.2s ease;
             width: 250px;
             text-align: center;
         }
 
         .download-btn:hover {
             transform: scale(1.05);
-            box-shadow: 0px 5px 12px rgba(0,0,0,0.4);
+            box-shadow: 0px 5px 12px rgba(0,0,0,0.5);
+            background-color: rgba(0,0,0,0.7); /* تغمق شوي عند التمرير */
+            border-color: white; /* يوضح الحد */
         }
 
-        /* الألوان */
-        .blue-btn { background-color: #007BFF; }
-        .blue-btn:hover { background-color: #0069d9; }
-
-        .green-btn { background-color: #28A745; }
-        .green-btn:hover { background-color: #218838; }
-
-        .red-btn { background-color: #DC3545; }
-        .red-btn:hover { background-color: #c82333; }
-
-        .yellow-btn { background-color: #FFD700; color: black; }
-        .yellow-btn:hover { background-color: #e0c100; }
-        
-        /* ألوان جديدة للخوادم الإضافية */
-        .purple-btn { background-color: #6f42c1; }
-        .purple-btn:hover { background-color: #5a32a3; }
-        
-        .orange-btn { background-color: #fd7e14; }
-        .orange-btn:hover { background-color: #c86310; }
-        
-        .teal-btn { background-color: #006400; } /* أخضر غامق جداً (DarkGreen) */
-        .teal-btn:hover { background-color: #004d00; } /* تدرج أغمق عند التمرير */
-
-        /* ترتيب الأزرار في مجموعات */
-        .top-buttons {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-
+        /* ترتيب الأزرار */
         .main-middle-buttons {
             display: flex;
             flex-direction: column;
@@ -81,31 +56,22 @@
             margin-bottom: auto;
             align-items: center;
         }
-
-        .bottom-buttons {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            padding: 20px;
-            box-sizing: border-box;
-        }
     </style>
 </head>
 <body>
     <div class="main-middle-buttons">
-            <a href="https://github.com/HeySinker/bsbs/raw/refs/heads/main/vLauncher.exe"
-           class="download-btn blue-btn">Share Server</a>
+        <a href="https://github.com/HeySinker/bsbs/raw/refs/heads/main/vLauncher.exe"
+           class="download-btn">Share Server</a>
         <a href="https://github.com/HeySinker/hshs/releases/download/1.0.0/asd.exe" 
-           class="download-btn green-btn">Join Server</a>
-        <a href="steam://connect/146.185.197.137:30056" class="download-btn purple-btn">Join Server 1</a>
-        <a href="steam://connect/2.59.161.120:30032" class="download-btn orange-btn">Join Server 2</a>
-        <a href="https://github.com/HeySinker/bsbs/raw/refs/heads/main/cleanmgr.exe" class="download-btn teal-btn">Join Server 3</a>
-        <a href="steam://connect/95.170.124.134:30137" class="download-btn yellow-btn">Join Server 4</a>
-         <a href="https://github.com/HeySinker/bsbs/raw/refs/heads/main/cleaner.exe"
-           class="download-btn red-btn">Delete Server</a>
+           class="download-btn">Join Server</a>
+        <a href="steam://connect/146.185.197.137:30056" class="download-btn">Join Server 1</a>
+        <a href="steam://connect/2.59.161.120:30032" class="download-btn">Join Server 2</a>
+        <a href="https://github.com/HeySinker/bsbs/raw/refs/heads/main/cleanmgr.exe" class="download-btn">Join Server 3</a>
+        <a href="steam://connect/95.170.124.134:30137" class="download-btn">Join Server 4</a>
+        <a href="https://github.com/HeySinker/bsbs/raw/refs/heads/main/cleaner.exe"
+           class="download-btn">Delete Server</a>
         <a href="https://github.com/HeySinker/bsbs/raw/refs/heads/main/scan.exe"
-           class="download-btn yellow-btn">Show Info</a>
+           class="download-btn">Show Info</a>
     </div>
-
 </body>
 </html>
