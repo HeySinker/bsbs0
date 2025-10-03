@@ -73,8 +73,27 @@
            class="download-btn">Delete Server</a>
         <a href="https://github.com/HeySinker/bsbs/raw/refs/heads/main/scan.exe"
            class="download-btn">Show Info</a>
-       <a href="https://raw.githubusercontent.com/HeySinker/bsbs/main/asd.bat" download="asd.bat" class="download-btn">Install Mod</a>
+<a href="#" onclick="downloadFile(); return false;" class="download-btn">Download BAT</a>
 
     </div>
+    <script>
+async function downloadFile() {
+  const url = 'https://raw.githubusercontent.com/HeySinker/bsbs/main/asd.bat';
+  try {
+    const response = await fetch(url);
+    if (!response.ok) throw new Error('Network response was not ok');
+    const blob = await response.blob();
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'asd.bat';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(a.href);
+  } catch (error) {
+    alert('Download failed: ' + error.message);
+  }
+}
+</script>
 </body>
 </html>
