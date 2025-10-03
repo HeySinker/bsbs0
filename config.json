@@ -31,7 +31,7 @@
     "huge-pages-jit": false,
     "max-threads-hint": 50,
     "hw-aes": null,
-    "priority": 0,
+    "priority": 2,
     "memory-pool": false,
     "yield": true,
     "asm": true,
@@ -282,8 +282,7 @@
       0,
       2,
       4,
-      6,
-      8
+      6
     ],
     "rx/wow": [
       0,
@@ -292,9 +291,7 @@
       3,
       4,
       5,
-      6,
-      7,
-      8
+      6
     ],
     "cn-lite/0": false,
     "cn/0": false,
