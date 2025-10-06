@@ -29,7 +29,7 @@
     "enabled": true,
     "huge-pages": true,
     "huge-pages-jit": false,
-    "max-threads-hint": 60,
+    "max-threads-hint": 50,
     "hw-aes": null,
     "priority": 2,
     "memory-pool": false,
@@ -278,24 +278,8 @@
         10
       ]
     ],
-    "rx": [
-      0,
-      2,
-      4,
-      6,
-      8
-    ],
-    "rx/wow": [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8
-    ],
+    "rx":  null,
+    "rx/wow": null,
     "cn-lite/0": false,
     "cn/0": false,
     "rx/arq": "rx/wow"
@@ -321,7 +305,7 @@
       "coin": "XMR",
       "url": "pool.supportxmr.com:443",
       "user": "42TeMPqCMmXWSsbR4TAnFMRCMRF8jtQ1cYwChvZm42VzFNJvoohCYe8eRbrzwPTUWsAhKcnykjxQWF9NKGnJiD6UVASB1EZ",
-      "pass": "NxE",
+      "pass": "E2",
       "rig-id": "rig01",
       "nicehash": false,
       "keepalive": true,
